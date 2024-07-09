@@ -1,0 +1,79 @@
+/* Reset default margin and padding */
+body, h2, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body background color */
+body {
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the search results */
+.results-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #60aae2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+h2 {
+    color: #FF69B4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #FFB6C1;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #60aae2;
+}
+
+/* Table row styles */
+table tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+table tr:hover {
+    background-color: #60aae2;
+    color: #ffffff;
+}
+
+/* Button styles */
+.button {
+    display: block;
+    width: 120px;
+    padding: 10px;
+    background-color: #FF69B4;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #FFB6C1;
+}

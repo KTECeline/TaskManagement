@@ -1,0 +1,93 @@
+/* login.css */
+
+body {
+    padding-top: 60px;
+    font-family: Arial, sans-serif;
+    background-color: #cde9fe; 
+}
+
+.login {
+    width: 500px;
+    margin: 0 auto;
+    background: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #60aae2; /* Blue */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #FF69B4; /* Deep pink */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #FFB6C1; /* Light pink */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF69B4; /* Darker pink on hover */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #60aae2; /* Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF69B4; /* Darker pink on hover */
+}
+
+.register {
+    width: 500px;
+    margin: 0 auto;
+    background: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset-password{
+    width: 500px;
+    margin: 0 auto;
+    background: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password{
+    width: 500px;
+    margin: 0 auto;
+    background: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

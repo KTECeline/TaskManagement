@@ -1,0 +1,133 @@
+/* Modal styles */
+.modal-content {
+  background-color: #ebf6fe;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.modal-content h2 {
+  color: black; 
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #8E8E8E; /* Soft gray */
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  
+  margin-bottom: 12px;
+  border: 2px solid #FFD1DC; /* Light pink */
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  background-color: #FFFFFF;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #E6E6FA; /* Soft lavender */
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+  min-width: 40px;
+}
+
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23FF69B4" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: 50%;
+  padding-right: 30px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+input[type="submit"],
+a.cancel-btn {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+input[type="submit"] {
+  background-color: #a8d6fa; 
+  color: #4A4A4A;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #60aae2; 
+  color:white;
+  transform: translateY(-2px);
+}
+
+a.cancel-btn {
+  background-color: #FFB6C1; /* Light pink */
+  color: #4A4A4A;
+}
+
+a.cancel-btn:hover {
+  background-color: #FF69B4; /* Hot pink */
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 450px) {
+  .modal-content {
+      margin: 10px;
+      padding: 15px;
+  }
+
+  .button-group {
+      flex-direction: column;
+  }
+
+  input[type="submit"],
+  a.cancel-btn {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 8px;
+  }
+}

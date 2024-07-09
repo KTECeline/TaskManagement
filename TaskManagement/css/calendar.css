@@ -1,0 +1,106 @@
+/* styles.css */
+
+/* Container for the calendar */
+.calendar-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Style for month and year dropdowns */
+.calendar-container form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.calendar-container select {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Calendar grid styles */
+.calendar {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    background-color: #60aae2;
+    color: white;
+    padding: 15px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.calendar-body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+.calendar-row {
+    display: flex;
+    width: 100%;
+}
+
+.calendar-cell {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    min-height: 120px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.calendar-date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    color: #60aae2;
+}
+
+.task {
+    background-color: #FF69B4;
+    color: white;
+    margin: 15px 0;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.cancel-btn {
+	background-color: #FFB6C1; /* Light pink */
+	color: #4A4A4A;
+	font-size:18px;
+	width: 100px;
+	height:35px;
+	
+      margin-right: 100px;
+      margin-bottom: 20px;
+  }
+  
+  .cancel-btn:hover {
+	background-color: #FF69B4; /* Hot pink */
+	color: #FFFFFF;
+	transform: translateY(-2px);
+}
