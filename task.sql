@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `task`
 --
+CREATE DATABASE taskmanagement;
 
 CREATE TABLE `task` (
   `taskID` int(11) NOT NULL,
